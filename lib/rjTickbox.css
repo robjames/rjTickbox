@@ -1,0 +1,47 @@
+/* line 1, /Users/robjames/Dropbox/GitHub/AngularJs/rjTickbox/lib/rjTickbox.less */
+label.tickbox {
+  background: none repeat scroll 0 0 #F2F2F2;
+  border-radius: 10px;
+  font-size: smaller;
+  margin: 2px;
+  padding: 3px 10px 3px 15px;
+  cursor: pointer;
+  position: relative;
+}
+/* line 10, /Users/robjames/Dropbox/GitHub/AngularJs/rjTickbox/lib/rjTickbox.less */
+label.tickbox:before {
+  bottom: -5px;
+  color: #F78A7E;
+  content: "";
+  font-size: 25px;
+  left: -5px;
+  line-height: 25px;
+  position: absolute;
+  text-shadow: 2px 0px 0px #fff;
+}
+/* line 21, /Users/robjames/Dropbox/GitHub/AngularJs/rjTickbox/lib/rjTickbox.less */
+label.tickbox.TRUE {
+  background: #a4db51;
+}
+/* line 24, /Users/robjames/Dropbox/GitHub/AngularJs/rjTickbox/lib/rjTickbox.less */
+label.tickbox.TRUE:before {
+  color: #3F6601;
+  content: "✔︎";
+}
+/* line 29, /Users/robjames/Dropbox/GitHub/AngularJs/rjTickbox/lib/rjTickbox.less */
+label.tickbox.FALSE {
+  background: #BE1E2D;
+  color: #fff;
+}
+/* line 33, /Users/robjames/Dropbox/GitHub/AngularJs/rjTickbox/lib/rjTickbox.less */
+label.tickbox.FALSE:before {
+  color: #F78A7E;
+  content: "✘";
+}
+/* line 39, /Users/robjames/Dropbox/GitHub/AngularJs/rjTickbox/lib/rjTickbox.less */
+label.tickbox input[type="checkbox"] {
+  left: 0;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+}

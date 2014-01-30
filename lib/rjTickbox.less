@@ -1,0 +1,45 @@
+label.tickbox {
+	background: none repeat scroll 0 0 #F2F2F2;
+    border-radius: 10px;
+    font-size: smaller;
+    margin: 2px;
+    padding: 3px 10px 3px 15px;
+    cursor: pointer;
+    position: relative;
+
+    &:before {
+	    bottom: -5px;
+	    color: #F78A7E;
+	    content: "";
+	    font-size: 25px;
+	    left: -5px;
+	    line-height: 25px;
+	    position: absolute;
+	    text-shadow: 2px 0px 0px #fff;
+    }
+
+    &.TRUE {
+	    background: #a4db51;
+
+	    &:before {
+		    color: #3F6601;
+		    content: "✔︎";
+		}
+    }
+    &.FALSE {
+	    background: #BE1E2D;
+	    color: #fff;
+
+	    &:before {
+		    color: #F78A7E;
+		    content: "✘";
+		}
+    }
+
+	input[type="checkbox"] {
+		left: 0;
+	    position: absolute;
+	    top: 0;
+	    visibility: hidden;
+	}
+}
