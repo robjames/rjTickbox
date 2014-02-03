@@ -43,5 +43,6 @@ label.tickbox input[type="checkbox"] {
   left: 0;
   position: absolute;
   top: 0;
-  visibility: hidden;
+  /* note clip choice over visibility hidden for IE8 support */
+  clip: rect(0 0 0 0);
 }
